@@ -126,7 +126,7 @@ it basically selects all benchmarks starting with
 Run a specific benchmark in `Prelude.Serial` suite:
 
 ```
-$ bench.sh --benchmarks Prelude.Serial --prefix Prelude.Serial/o-1-space/generation/unfoldr
+$ bench.sh --benchmarks Prelude.Serial --prefix Prelude.Serial/o-1-space.generation.unfoldr
 ```
 
 Run a benchmark directly instead of running it through `bench.sh`:

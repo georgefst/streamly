@@ -71,11 +71,11 @@ list_comparisons ()  {
 # chart is expensive to build and usually not required to be rebuilt,
 # use master branch as fallback
 cabal_which_report() {
-  local path=$(cabal_which streamly-benchmarks x $1)
+  local path=$(cabal_which bench-chart x $1)
   if test -z "$path"
   then
     echo "Cannot find $1 executable, trying in dist-newstyle" 1>&2
-    local path1=$(cabal_which_builddir dist-newstyle streamly-benchmarks x $1)
+    local path1=$(cabal_which_builddir dist-newstyle bench-chart x $1)
     if test -z "$path1"
     then
       local path2="./bin/$1"
@@ -113,7 +113,7 @@ build_report_prog() {
     then
       echo "Building bench-show executables"
       BUILD_ONCE=1
-      $CABAL_EXECUTABLE v2-build --flags dev chart \
+      $CABAL_EXECUTABLE v2-build chart \
         || die "bench-show build failed"
 
     elif test ! -x "$prog_path"

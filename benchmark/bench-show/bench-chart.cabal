@@ -1,0 +1,20 @@
+cabal-version:      2.2
+name:               bench-chart
+version:            0.0.0
+synopsis:           Chart for Benchmarks
+description: Chart is separated from the benchmarks.
+
+-------------------------------------------------------------------------------
+-- benchmark comparison and presentation
+-------------------------------------------------------------------------------
+
+executable chart
+  default-language: Haskell2010
+  ghc-options: -Wall
+  hs-source-dirs: .
+  main-is: Chart.hs
+  buildable: True
+  build-Depends:
+    base >= 4.9 && < 5
+    , bench-show >= 0.3 && < 0.4
+    , transformers >= 0.4   && < 0.6
