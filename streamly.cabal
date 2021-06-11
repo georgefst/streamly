@@ -72,6 +72,9 @@ extra-source-files:
     benchmark/lib/Streamly/Benchmark/*.hs
     benchmark/lib/Streamly/Benchmark/Common/*.hs
     benchmark/streamly-benchmarks.cabal
+    benchmark/bench-show/Chart.hs
+    benchmark/bench-show/bench-chart.cabal
+    benchmark/bench-show/default.nix
     bin/bench.sh
     bin/bench-exec-one.sh
     bin/build-lib.sh

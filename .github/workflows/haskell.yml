@@ -35,7 +35,7 @@ jobs:
       DISABLE_DOCS: ${{ matrix.disable_docs }}
       SDIST_OPTIONS: ${{ matrix.sdist_options }}
       DISABLE_SDIST_BUILD: ${{ matrix.disable_sdist_build }}
-      DISABLE_SDIST_GIT_CHECK: ${{ matrix.disable_dist_checks }}
+      DISABLE_DIST_CHECKS: ${{ matrix.disable_dist_checks }}
 
     runs-on: ${{ matrix.runner }}
     strategy:
