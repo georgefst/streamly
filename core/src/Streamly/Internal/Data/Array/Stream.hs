@@ -243,7 +243,6 @@ takeArrayListRev = go
 
 -- When we have to take an array partially, take the last part of the array in
 -- the first split.
-{-# INLINE splitAtArrayListRev #-}
 splitAtArrayListRev ::
     forall a. Unbox a => Int -> [Array a] -> ([Array a],[Array a])
 splitAtArrayListRev n ls
